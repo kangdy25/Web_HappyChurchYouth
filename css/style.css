@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+header {
+    width: 100%;
+    border-bottom: 1px solid #aaa;
+    /* border-left: 10px solid #aaa; */
+}
+
+header .inner {
+    width: 1180px;
+    height: 120px;
+    margin: 0px auto;
+    position: relative;
+    /* border-left: 10px solid #000; */
+    /* border-right: 10px solid #000; */
+    /* border-bottom: 10px solid #000; */
+}
+
+header .inner h1 {
+    position: absolute;
+    left: 0px;
+    bottom: 20px;
+}
+
+header .inner h1 a {
+    font: bold 25px/1 "arial";
+    color: #444;
+}
+
+header .inner #gnb {
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    /* border: 5px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header .inner #gnb li {
+    display: flex;
+}
+
+header .inner #gnb li a {
+    padding: 10px 50px;
+    font: bold 17px/1 "arial";
+    color: #555;
+    transition: all 0.5s;
+}
+
+header .inner #gnb li a:hover {
+    background: #555;
+    color: #fff;
+}
+
+header .inner .util {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header .inner .util li {
+    display: flex;
+}
+
+header .inner .util li a {
+    padding: 10px 10px;
+    font: normal 13px/1 "arial";
+    color: #aaa;
+}
+
+/* visual */
+figure {
+    width: 100%;
+    height: calc(100vh - 120px);
+    background: #000;
+    position: relative;
+    overflow: hidden;
+    padding-top: 250px; 
+    /* border: 5px solid #fff; */
+}
+
+figure video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+figure .inner {
+    width: 1180px;
+    margin: 0px auto;
+    position: relative;
+}
+
+figure .inner h1 {
+    font: bold 70px/1.3 "KoPubWorld돋움체_Pro Bold";
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+figure .inner p {
+    font: bold 15px/1.3 "나눔스퀘어 Bold";
+    color: #888;
+    margin-bottom: 60px;
+}
