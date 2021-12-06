@@ -42,6 +42,12 @@ header .inner h1 a {
     color: #444;
 }
 
+header .inner h1 a:hover{
+    font: bold 25px/1 "orbitron";
+    color: #777;
+    opacity: 0.5;
+}
+
 header .inner #gnb {
     position: absolute;
     bottom: 10px;
