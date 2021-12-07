@@ -264,17 +264,19 @@ footer .inner .lower address {
         /* border: 5px solid #000; */
     }
     header .inner h1 a {
-        padding-left: 30px;
+        padding-left: 50px;
     }
     header .inner #gnb li a {
-        padding: 5px 25px;
+        padding: 5px 22px;
     }
     header .inner .util li a {
         padding: 15px 10px;
     }
+
+
     figure {
         width: 100vw;
-        height: calc(100vh - 400px);
+        height: calc(100vh - 300px);
     }
     figure video {
         width: 100vw;
@@ -283,11 +285,49 @@ footer .inner .lower address {
         width: 850px;
     }
     figure .inner h1 {
-        font-size: 40px;
+        font-size: 35px;
+        margin-left: 60px;
     }
-
     figure .inner p {
         font-size: 13px;
         margin-bottom: 60px;
+        margin-left: 60px;
     }
+
+
+    section {
+        padding: 100px 0px;
+    }
+    section .inner {
+        width: 750px;
+        padding: 50px;
+    }
+    section .inner h1 {
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+        
+    section .inner .wrap {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 70px;
+        column-gap: 100px;
+        /* border: 5px solid #000; */
+    }
+    
+    section .inner .wrap article h2 {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    section .inner .wrap article h2 a {
+        font-size: 18px;
+    }
+
+    section .inner .wrap article p {
+        font-size: 13px;
+    }
+
+    
 }
