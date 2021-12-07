@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 * {
     margin: 0px;
     padding: 0px;
@@ -228,7 +227,6 @@ footer .inner .upper ul {
     flex-flow: row;
     justify-content: center;
     padding-left: 20px;
-    
 }
 
 footer .inner .upper ul li {
@@ -261,7 +259,6 @@ footer .inner .lower address {
 @media screen and (max-width: 1199px) {
     header .inner {
         width: 850px;
-        /* border: 5px solid #000; */
     }
     header .inner h1 a {
         padding-left: 50px;
@@ -272,8 +269,6 @@ footer .inner .lower address {
     header .inner .util li a {
         padding: 15px 10px;
     }
-
-
     figure {
         width: 100vw;
         height: calc(100vh - 300px);
@@ -293,8 +288,6 @@ footer .inner .lower address {
         margin-bottom: 60px;
         margin-left: 60px;
     }
-
-
     section {
         padding: 100px 0px;
     }
@@ -306,28 +299,33 @@ footer .inner .lower address {
         font-size: 25px;
         padding-bottom: 20px;
     }
-        
     section .inner .wrap {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         row-gap: 70px;
         column-gap: 100px;
-        /* border: 5px solid #000; */
     }
-    
     section .inner .wrap article h2 {
         margin-bottom: 15px;
         text-align: center;
     }
-
     section .inner .wrap article h2 a {
         font-size: 18px;
     }
-
     section .inner .wrap article p {
         font-size: 13px;
     }
-
     
+    footer .inner {
+        width: 850px;
+    }
+/* 
+    footer .inner .upper ul li a {
+        font-size: 25px;
+    }
+
+    footer .inner .lower address {
+        font-size: 12px;
+    } */
 }
