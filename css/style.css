@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 * {
     margin: 0px;
     padding: 0px;
@@ -32,20 +33,23 @@ header .inner {
 }
 
 header .inner h1 {
-    position: absolute;
+    position: relative;
     left: 0px;
-    bottom: 20px;
+    top: 50px;
 }
 
 header .inner h1 a {
     font: bold 25px/1 "arial";
     color: #444;
+    transition: all 0.5s;
 }
 
 header .inner h1 a:hover{
-    font: bold 25px/1 "orbitron";
     color: #777;
+    transform: scale(1.2);
     opacity: 0.5;
+    border-radius: 10px;
+    /* 왜 적용이 안 되노...... */
 }
 
 header .inner #gnb {
@@ -72,6 +76,9 @@ header .inner #gnb li a {
 header .inner #gnb li a:hover {
     background: #555;
     color: #fff;
+    transform: scale(1.2);
+    opacity: 0.5;
+    border-radius: 10px;
 }
 
 header .inner .util {
@@ -197,6 +204,7 @@ section .inner .wrap article .pic img {
     height: 100%;
 }
 
+/* footer */
 footer {
     width: 100%;
     background: #333;
@@ -249,3 +257,37 @@ footer .inner .lower address {
     color: #888;
 }
 
+
+@media screen and (max-width: 1199px) {
+    header .inner {
+        width: 850px;
+        /* border: 5px solid #000; */
+    }
+    header .inner h1 a {
+        padding-left: 30px;
+    }
+    header .inner #gnb li a {
+        padding: 5px 25px;
+    }
+    header .inner .util li a {
+        padding: 15px 10px;
+    }
+    figure {
+        width: 100vw;
+        height: calc(100vh - 400px);
+    }
+    figure video {
+        width: 100vw;
+    }
+    figure .inner {
+        width: 850px;
+    }
+    figure .inner h1 {
+        font-size: 40px;
+    }
+
+    figure .inner p {
+        font-size: 13px;
+        margin-bottom: 60px;
+    }
+}
