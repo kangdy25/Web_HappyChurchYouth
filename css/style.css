@@ -350,7 +350,7 @@ footer .inner .lower address {
         padding-top: 150px;
     }
     figure .inner {
-        width: 550px;
+        width: 500px;
     }
     figure .inner h1 {
         font-size: 27px;
@@ -380,5 +380,9 @@ footer .inner .lower address {
     }
     section .inner .wrap article .pic {
         height: 250px;
+    }
+    
+    footer .inner {
+        width: 550px;
     }
 }
