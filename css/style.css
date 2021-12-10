@@ -121,11 +121,11 @@ header .inner .util li a {
 
 .menu-wrap .hamburger {
     position: absolute;
-    top: 35px;
+    top: 37px;
     right: 25px;
     z-index: 98;
-    width: 28px;
-    height: 28px;
+    width: 25px;
+    height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
