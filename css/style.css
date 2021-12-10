@@ -33,7 +33,7 @@ header .inner {
 header .inner h1 {
     position: relative;
     left: 0px;
-    top: 50px;
+    top: 45px;
 }
 
 header .inner h1 a {
@@ -47,7 +47,6 @@ header .inner h1 a:hover{
     transform: scale(1.2);
     opacity: 0.5;
     border-radius: 10px;
-    /* 왜 적용이 안 되노...... */
 }
 
 header .inner #gnb {
@@ -96,6 +95,155 @@ header .inner .util li a {
     padding: 10px 10px;
     font: normal 13px/1 "arial";
     color: #aaa;
+}
+
+/* Nav bar design*/
+
+.menu-wrap {
+    position: fixed;
+    top: 28px;
+    right: 28px;
+    z-index: 98;
+    display: none;
+}
+
+.menu-wrap .toggler {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    z-index: 99;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    opacity: 0;
+    transform: scale(1.5);
+}
+
+.menu-wrap .hamburger {
+    position: absolute;
+    top: 35px;
+    right: 25px;
+    z-index: 98;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hamburger Line */
+.menu-wrap .hamburger > div {
+    position: relative;
+    flex: none;
+    width: 100%;
+    height: 3px;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+/* Hamburger Lines - Top & Bottom */
+.menu-wrap .hamburger > div::before,
+.menu-wrap .hamburger > div::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 3px;
+    background: inherit;
+}
+
+/* Moves Line Down */
+.menu-wrap .hamburger > div::after {
+    top: 10px;
+}
+
+/* Toggler Animation */
+.menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+}
+
+/* Turns Lines Into X */
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+/* Rotate On Hover When Checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+}
+
+.toggler:checked ~ .menu {
+    visibility: visible;
+}
+
+.toggler:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: 0.75s;
+}
+
+.toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    transition: opacity 0.4s ease 0.4s;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 92;
+}
+
+.menu > div {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    width: 200vw;
+    height: 200vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+}
+
+.menu > div > div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.menu > div > div > ul > li {
+    list-style: none;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
+    transition: all 0.4s ease;
+}
+
+.menu > div > div > ul > li:hover {
+    color: rgb(154, 167, 224);
+    transform: rotate(15deg);
+}
+
+.menu > div > div > ul > li > a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.4s ease;
 }
 
 /* visual */
@@ -505,4 +653,13 @@ footer .inner .lower address {
         margin-left: 10px;
         font: bold 11px/1.5 "arial";
     }
+}
+
+@media only screen and (max-width: 549px) {
+
+    .menu-wrap {
+        display: inline-block;
+    }
+
+
 }
