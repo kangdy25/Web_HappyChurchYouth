@@ -399,7 +399,11 @@ footer .inner .lower address {
     }
 }
 @media screen and (max-width: 549px) {
-    
+    header {
+        width: 100%;
+        border-bottom: 1px solid #aaa;
+        /* border-left: 10px solid #aaa; */
+    }
     header .inner {
         width: 550px;
         border: 7px solid #222;
