@@ -100,7 +100,7 @@ header .inner .util li a {
 /* Nav bar design*/
 
 .menu-wrap {
-    position: fixed;
+    position: absolute;
     top: 28px;
     right: 28px;
     z-index: 98;
