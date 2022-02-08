@@ -53,9 +53,7 @@ header .inner #gnb {
     position: absolute;
     bottom: 10px;
     right: 0px;
-    /* border: 5px solid blue; */
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
 }
 
@@ -83,7 +81,6 @@ header .inner .util {
     right: 20px;
     top: 10px;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
 }
 
@@ -134,13 +131,9 @@ header .inner .util li a {
 /* Hamburger Line */
 .menu-wrap .hamburger > div {
     position: relative;
-    flex: none;
     width: 100%;
     height: 3px;
     background: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transition: all 0.4s ease;
 }
 
@@ -309,7 +302,6 @@ section .inner h1 {
 section .inner .wrap {
     width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
 }
 
@@ -372,7 +364,6 @@ footer .inner .upper {
 
 footer .inner .upper ul {
     display: flex;
-    flex-flow: row;
     justify-content: center;
     padding-left: 20px;
 }
@@ -526,8 +517,7 @@ footer .inner .lower address {
     }
     section .inner .wrap article {
         width: 190px;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin: 0px 10px;
     }
     section .inner .wrap article .pic {
         height: 200px;
@@ -612,8 +602,7 @@ footer .inner .lower address {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        row-gap: 20px;
-        column-gap: 20px;
+        gap: 20px;  
     }
 
     section .inner .wrap article {
@@ -657,10 +646,7 @@ footer .inner .lower address {
 }
 
 @media only screen and (max-width: 549px) {
-
     .menu-wrap {
         display: inline-block;
     }
-
-
 }
