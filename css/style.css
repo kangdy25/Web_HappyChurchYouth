@@ -25,9 +25,6 @@ header .inner {
     height: 120px;
     margin: 0px auto;
     position: relative;
-    /* border-left: 10px solid #000; */
-    /* border-right: 10px solid #000; */
-    /* border-bottom: 10px solid #000; */
 }
 
 header .inner h1 {
@@ -95,7 +92,6 @@ header .inner .util li a {
 }
 
 /* Nav bar design*/
-
 .menu-wrap {
     position: absolute;
     top: 28px;
@@ -248,7 +244,6 @@ figure {
     position: relative;
     overflow: hidden;
     padding-top: 250px; 
-    /* border: 5px solid #fff; */
 }
 
 figure video {
