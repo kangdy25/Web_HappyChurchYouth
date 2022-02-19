@@ -237,6 +237,54 @@ header .inner .util li a {
 }
 
 /* visual */
+main {
+    position: relative;
+    top: 75px;
+    left: 10%;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+}
+
+main section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+main section .contents {
+    padding: 10px;
+    width: 100%;
+}
+
+main section .contents .contents_detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+main .contents .contents_detail img {
+    width: 300px;
+    height: 320px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+main .contents .contents_detail img:hover {
+    transform: scale(1.5);
+    transition: 0.7s;
+}
+
+main .contents .contents_detail h4 {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 3px;
+    color: #444;
+    border-bottom: 1px solid #222;
+}
 
 /* footer */
 footer {
@@ -303,7 +351,20 @@ footer .inner .lower address {
     header .inner .util li a {
         padding: 15px 10px;
     }
-
+    main section {
+        gap: 30px;
+    }
+    main .contents .contents_detail img {
+        width: 220px;
+        height: 240px;
+    }
+    main .contents .contents_detail img:hover {
+        transform: scale(1.3);
+    }
+    main .contents .contents_detail h4 {
+        font-size: 16px;
+        font-weight: 700;
+    }
     footer .inner {
         width: 850px;
     }
@@ -329,7 +390,28 @@ footer .inner .lower address {
         font-size: 12px;
         padding: 15px 7px;   
     }
-    
+    main section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    main section .contents {
+        padding: 10px;
+        width: 100%;
+    }
+    main section .contents .contents_detail {
+        gap: 10px;
+    }
+    main .contents .contents_detail img {
+        width: 210px;
+        height: 230px;
+    }
+    main .contents .contents_detail img:hover {
+        transform: scale(1.2);
+        transition: 0.7s;
+    }
+    main .contents .contents_detail h4 {
+        font-size: 14px;
+        font-weight: 700;
+    }
     footer .inner {
         width: 550px;
     }
@@ -361,7 +443,21 @@ footer .inner .lower address {
     header .inner .util {
         display: none; 
     }
-    
+    main section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    main .contents .contents_detail img {
+        width: 300px;
+        height: 320px;
+    }
+
+    main .contents .contents_detail img:hover {
+        transform: scale(1.2);
+    }
+    main .contents .contents_detail h4 {
+        font-size: 18px;
+        font-weight: 600;
+    }
     footer .inner {
         width: 270px;
     }
