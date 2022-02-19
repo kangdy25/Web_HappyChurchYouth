@@ -1,0 +1,647 @@
+@charset "utf-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+header {
+    width: 100%;
+    border-bottom: 1px solid #aaa;
+}
+
+header .inner {
+    width: 1180px;
+    height: 120px;
+    margin: 0px auto;
+    position: relative;
+}
+
+header .inner h1 {
+    position: relative;
+    left: 0px;
+    top: 45px;
+}
+
+header .inner h1 a {
+    font: bold 25px/1 "arial";
+    color: #444;
+    transition: all 0.5s;
+}
+
+header .inner h1 a:hover{
+    color: #777;
+    transform: scale(1.2);
+    opacity: 0.5;
+    border-radius: 10px;
+}
+
+header .inner #gnb {
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header .inner #gnb li {
+    display: flex;
+}
+
+header .inner #gnb li a {
+    padding: 12px 50px;
+    font: bold 17px/1 "arial";
+    color: #555;
+    transition: all 0.5s;
+}
+
+header .inner #gnb li a:hover {
+    background: #555;
+    color: #fff;
+    transform: scale(1.2);
+    opacity: 0.5;
+    border-radius: 10px;
+}
+
+header .inner .util {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header .inner .util li {
+    display: flex;
+}
+
+header .inner .util li a {
+    padding: 10px 10px;
+    font: normal 13px/1 "arial";
+    color: #aaa;
+}
+
+/* Nav bar design*/
+.menu-wrap {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    z-index: 98;
+    display: none;
+}
+
+.menu-wrap .toggler {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    z-index: 99;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    opacity: 0;
+    transform: scale(1.5);
+}
+
+.menu-wrap .hamburger {
+    position: absolute;
+    top: 37px;
+    right: 25px;
+    z-index: 98;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hamburger Line */
+.menu-wrap .hamburger > div {
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background: #333;
+    transition: all 0.4s ease;
+}
+
+/* Hamburger Lines - Top & Bottom */
+.menu-wrap .hamburger > div::before,
+.menu-wrap .hamburger > div::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 3px;
+    background: inherit;
+}
+
+/* Moves Line Down */
+.menu-wrap .hamburger > div::after {
+    top: 10px;
+}
+
+/* Toggler Animation */
+.menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+    background: #ddd;
+}
+
+/* Turns Lines Into X */
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+/* Rotate On Hover When Checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+}
+
+.toggler:checked ~ .menu {
+    visibility: visible;
+}
+
+.toggler:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: 0.75s;
+}
+
+.toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    transition: opacity 0.4s ease 0.4s;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 92;
+}
+
+.menu > div {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    width: 200vw;
+    height: 200vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+}
+
+.menu > div > div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.menu > div > div > ul > li {
+    list-style: none;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
+    transition: all 0.4s ease;
+}
+
+.menu > div > div > ul > li:hover {
+    color: rgb(154, 167, 224);
+    transform: rotate(15deg);
+}
+
+.menu > div > div > ul > li > a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
+/* visual */
+/* figure {
+    width: 100%;
+    height: calc(100vh - 120px);
+    background: #000;
+    position: relative;
+    overflow: hidden;
+    padding-top: 250px; 
+}
+
+figure video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+figure .inner {
+    width: 1180px;
+    margin: 0px auto;
+    position: relative;
+}
+
+figure .inner h1 {
+    font: bold 70px/1.3 "KoPubWorld돋움체_Pro Bold";
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+figure .inner p {
+    font: bold 15px/1.3 "나눔스퀘어 Bold";
+    color: #888;
+    margin-bottom: 60px;
+}
+
+section {
+    width: 100%;
+    padding: 200px 0px;
+}
+
+section .inner {
+    border: 1px solid #777;
+    border-radius: 20px;
+    width: 1180px;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+section .inner h1 {
+    font: bold 30px/1 "나눔스퀘어 Bold";
+    text-align: center;
+    color: #555;
+    margin-bottom: 45px;
+}
+
+section .inner .wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+section .inner .wrap article {
+    width: 260px;
+    margin-left: 40px;
+}
+
+section .inner .wrap article:last-child {
+    margin-right: 40px;
+}
+
+section .inner .wrap article h2 {
+    margin-bottom: 20px;
+}
+
+section .inner .wrap article h2 a {
+    font: bold 20px/1 "나눔스퀘어 Bold" ;
+    color: #555;
+}
+
+section .inner .wrap article p {
+    font: normal 14px/1.4 "arial" ;
+    color: #999;
+}
+
+section .inner .wrap article .pic {
+    width: 100%;
+    height: 270px;
+    background: #333;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+section .inner .wrap article .pic img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+} */
+
+/* footer */
+footer {
+    width: 100%;
+    background: #333;
+    padding: 100px 0px;
+    border-top: 1px solid #888;
+}
+
+footer .inner {
+    width: 1180px;
+    margin: 0px auto;
+}
+
+footer .inner .upper {
+    width: 100%;
+    border-bottom: 1px solid #777;
+    padding-bottom: 20px;
+}
+
+footer .inner .upper ul {
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+footer .inner .upper ul li {
+    margin-left: 25px;
+}
+
+footer .inner .upper ul li:last-child {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+footer .inner .upper ul li a {
+    color: #999;
+    font-size: 30px;
+}
+
+footer .inner .lower {
+    width: 100%;
+    padding-top: 20px;
+}
+
+footer .inner .lower address {
+    margin-left: 30px;
+    width: 100%;
+    font: bold 14px/1.3 "arial";
+    color: #888;
+}
+
+
+@media screen and (max-width: 1199px) {
+    header .inner {
+        width: 850px;
+    }
+    header .inner h1 a {
+        padding-left: 50px;
+    }
+    header .inner #gnb li a {
+        padding: 5px 22px;
+    }
+    header .inner .util li a {
+        padding: 15px 10px;
+    }
+    /* figure {
+        width: 100vw;
+        height: calc(100vh - 300px);
+        padding-top: 200px;
+    }
+    figure video {
+        width: 100vw;
+    }
+    figure .inner {
+        width: 850px;
+    }
+    figure .inner h1 {
+        font-size: 35px;
+        margin-left: 60px;
+    }
+    figure .inner p {
+        font-size: 13px;
+        margin-bottom: 60px;
+        margin-left: 60px;
+    }
+    section {
+        padding: 100px 0px;
+    }
+    section .inner {
+        width: 750px;
+        padding: 50px;
+    }
+    section .inner h1 {
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+    section .inner .wrap {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 70px;
+        column-gap: 100px;
+    }
+    section .inner .wrap article h2 {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    section .inner .wrap article h2 a {
+        font-size: 18px;
+    }
+    section .inner .wrap article p {
+        font-size: 13px;
+    } */
+    
+    footer .inner {
+        width: 850px;
+    }
+}
+
+
+@media screen and (max-width: 849px) {
+    header .inner {
+        width: 550px;
+    }
+    header .inner h1 a {
+        padding-left: 25px;
+        font-size: 22px;
+    }
+    header .inner #gnb li a {
+        font-size: 13px;
+        padding: 10px 10px;
+    }
+    header .inner #gnb li a:hover {
+        transform: scale(1.1);
+    }
+    header .inner .util li a {
+        font-size: 12px;
+        padding: 15px 7px;   
+    }
+    
+    /* figure {
+        width: 100vw;
+        height: calc(100vh - 480px);
+        padding-top: 150px;
+    }
+    figure .inner {
+        width: 500px;
+    }
+    figure .inner h1 {
+        font-size: 27px;
+        margin-left: 20px;
+    }
+    figure .inner p {
+        font-size: 11px;
+        margin-left: 30px;
+    }
+    section .inner {
+        width: 500px;   
+        padding: 10px;
+    }
+    section .inner h1 {
+        font-size: 20px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    section .inner .wrap {
+        width: 500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 40px;
+        column-gap: 40px;
+    }
+    section .inner .wrap article {
+        width: 190px;
+        margin: 0px 10px;
+    }
+    section .inner .wrap article .pic {
+        height: 200px;
+    } */
+    
+    footer .inner {
+        width: 550px;
+    }
+    
+    footer .inner .upper ul li a {
+        font-size: 25px;
+    }
+
+    footer .inner .lower address {
+        margin-left: 30px;
+        font: bold 11.5px/1.3 "arial";
+    }
+}
+@media screen and (max-width: 549px) {
+    header {
+        width: 100%;
+    }
+    header .inner {
+        width: 100%;
+        border: 5px solid #222;
+    }
+    header .inner h1 a {
+        font-size: 25px;
+        padding-left: 40px;
+    }
+    header .inner #gnb  {
+        display: none;
+    }
+    header .inner .util {
+        display: none; 
+    }
+    
+    /* figure {
+        width: 100vw;
+        height: calc(100vh - 550px);
+        padding-top: 120px;
+        padding-bottom: 200px;
+    }
+    figure .inner {
+        width: 300px;
+        padding-left: 0px;
+    }
+    
+    figure video {
+        object-fit: cover;
+        width: 150%;
+    }
+
+    figure .inner h1 {
+        font-size: 23px;
+        margin-left: 0px;
+    }
+    figure .inner p {
+        font-size: 10px;
+        margin-left: 0px;
+    }
+    
+    section {
+        width: 100%;
+        padding: 50px 0px;
+    }
+
+    section .inner {
+        border: 0px;
+        width: 250px;
+        margin: 0px auto;
+        padding: 10px;
+    }
+
+    section .inner h1 {
+        font: bold 20px/1 "나눔스퀘어 Bold";
+        text-align: center;
+        padding-bottom: 0px;
+    }
+    
+    section .inner .wrap {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;  
+    }
+
+    section .inner .wrap article {
+        width: 130px;
+        margin-left: 10px;
+    }
+
+    section .inner .wrap article:last-child {
+        margin-right: 10px;
+    }
+
+    section .inner .wrap article h2 {
+        display: none;
+    }
+
+    section .inner .wrap article h2 a {
+        display: none;
+    }
+
+    section .inner .wrap article p {
+        display: none;
+    }
+
+    section .inner .wrap article .pic {
+        width: 100%;
+        height: 130px;
+        margin-bottom: 10px;
+    } */
+    footer .inner {
+        width: 270px;
+    }
+    
+    footer .inner .upper ul li a {
+        font-size: 20px;
+    }
+
+    footer .inner .lower address {
+        margin-left: 10px;
+        font: bold 11px/1.5 "arial";
+    }
+}
+
+@media only screen and (max-width: 549px) {
+    .menu-wrap {
+        display: inline-block;
+    }
+}
