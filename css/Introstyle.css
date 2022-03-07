@@ -238,6 +238,93 @@ header .inner .util li a {
 
 /* visual */
 
+main {
+    width: 1180px;
+    position: relative;
+    left: calc(50% - 590px);
+    /* border: 3px solid black;  */
+    margin-top: 100px;
+    padding: 20px;
+}
+
+main .title {
+    border-bottom: 1px solid #333;
+    padding: 10px;
+}
+
+main .title h3 {
+    font-size: 20px;
+    font-family: '나눔고딕';
+    font-weight: 500;
+    color: rgb(66, 94, 250);
+}
+
+main .map {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+main .intro {
+    padding: 20px;
+}
+
+main .intro p {
+    font-size: 17px;
+    font-family: '나눔고딕';
+    margin-bottom: 15px;
+}
+
+main .intro h1 {
+    font-size: 25px;
+    font-family: '나눔고딕';
+    font-weight: 600;
+    color: rgb(66, 94, 250);
+    margin-bottom: 30px;
+
+}
+main .line {
+    border-top: 1px solid #999;
+    padding: 40px;
+}
+
+main .line:last-child {
+    border-bottom: 1px solid #999;
+    margin-bottom: 100px;
+}
+
+main .line .divide {
+    display: flex;
+}
+
+main .line .divide h3 {
+    /* border: 3px solid aqua; */
+    padding-left: 20px;
+    padding-right: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    font-family: '나눔고딕';
+    color: #555;
+}
+
+main .line .divide .explain p{
+    margin-bottom: 5px;
+    font-family: '나눔스퀘어';
+    font-size: 17px;
+}
+
+main .line .divide .explain:nth-child(2) p{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-family: '나눔스퀘어';
+    font-size: 17px;
+}
+
+main .line .divide .explain p:last-child{
+    margin-bottom: 0px;
+}
 /* footer */
 footer {
     width: 100%;
