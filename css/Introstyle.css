@@ -456,6 +456,48 @@ footer .inner .lower address {
     header .inner .util li a {
         padding: 15px 10px;
     }
+
+    main {
+        width: 800px;
+        left: calc(50% - 400px);
+        padding: 20px;
+    }
+    
+    main .introImg h1 {
+        font-size: 25px;
+    }
+    
+    main .introImg img {
+        width: 760px;
+    }
+    
+    main .rectangle {
+        width: 760px;
+        height: 470px;
+        margin: 30px 0px;
+    }
+    main .rectangle h3  {
+        margin: 30px 0px;
+        text-align: center;
+        color: #ddd;
+        width: 800px;
+        font-size: 30px;
+    }
+    
+    main .rectangle p  {
+        font-size: 14px;
+        width: 370px;
+    }
+    
+    main .rectangle .Endcontent img {
+        width: 250px;
+        height: 300px;
+    }
+
+    main .line {
+        padding: 30px;
+    }
+
     footer .inner {
         width: 850px;
     }
@@ -481,6 +523,72 @@ footer .inner .lower address {
         font-size: 12px;
         padding: 15px 7px;   
     }
+
+
+
+    main {
+        width: 580px;
+        left: calc(50% - 290px);
+    }
+    
+    main .introImg h1 {
+        font-size: 20px;
+    }
+    
+    main .introImg img {
+        width: 540px;
+    }
+    
+    main .rectangle {
+        width: 550px;
+        height: 450px;
+    }
+    main .rectangle h3  {
+        width: 540px;
+        font-size: 27px;
+    }
+    
+    main .rectangle p  {
+        padding-left: 30px;
+        width: 280px;
+        font-size: 12px;
+    }
+    
+    main .rectangle .Endcontent img {
+        width: 200px;
+        height: 300px;
+    }
+    
+    main .title h3 {
+        font-size: 20px;
+    }
+    
+    
+    main .intro p {
+        font-size: 14px;
+    }
+    
+    main .intro h1 {
+        font-size: 18px;
+    }
+    main .line {
+        padding: 30px;
+    }
+    
+    main .line .divide h3 {
+        padding-left: 10px;
+        padding-right: 80px;
+        font-size: 16px;
+    }
+    
+    main .line .divide .explain p{
+        font-size: 15px;
+    }
+    
+    main .line .divide .explain:nth-child(2) p{
+        font-size: 16px;
+    }
+
     footer .inner {
         width: 550px;
     }
@@ -500,7 +608,6 @@ footer .inner .lower address {
     }
     header .inner {
         width: 100%;
-        border: 5px solid #222;
     }
     header .inner h1 a {
         font-size: 25px;
@@ -513,6 +620,116 @@ footer .inner .lower address {
         display: none; 
     }
     
+
+    main {
+        width: 420px;
+        left: calc(50% - 210px);
+    }
+    
+    main .introImg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    
+    main .introImg h1 {
+        font-size: 23px;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    main .introImg img {
+        width: 380px;
+    }
+    
+    main .rectangle {
+        width: 380px;
+        height: 800px;
+        margin: 10px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0px;
+    }
+    main .rectangle h3  {
+        justify-self: center;
+        margin: 20px 0px;
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    main .rectangle p  {
+        justify-content: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    main .rectangle .Endcontent {
+        justify-self: center;
+    }
+    
+    main .rectangle .Endcontent img {
+        width: 300px;
+        height: 330px;  
+    }
+    
+    main .title h3 {
+        margin: 10px 0px;
+        font-size: 20px;
+    }
+    main .map {
+        padding: 30px 0px;
+    }
+    
+    main .intro p {
+        font-size: 13px;
+    }
+    
+    main .intro h1 {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    
+    }
+    main .line {
+        padding: 10px;
+    }
+    
+    main .line:last-child {
+        margin-bottom: 40px;
+    }
+    
+    
+    main .line .divide h3 {
+        padding-left: 5px;
+        padding-right: 15px;
+        font-size: 14px;
+    }
+    
+    main .line .divide .explain p{
+        margin: 15px 0px;
+        font-family: '나눔스퀘어';
+        font-size: 14px;
+    }
+    
+    main .line .divide .explain:nth-child(2) p{
+        margin-bottom: 15px;
+        line-height: 1.5;
+        font-family: '나눔스퀘어';
+        font-size: 14px;
+    }
+
+
+
+
+
+
+
+
+
+
     footer .inner {
         width: 270px;
     }
