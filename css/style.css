@@ -537,7 +537,7 @@ footer .inner .lower address {
     }
     header .inner {
         width: 100%;
-        border: 5px solid #222;
+        /* border: 5px solid #222; */
     }
     header .inner h1 a {
         font-size: 25px;
