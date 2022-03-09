@@ -245,21 +245,24 @@ main .banner {
     display: flex;
     justify-content: center;
     margin-bottom: 100px;
+    margin-top: 20px;
 }
 
 main .banner img {
-    width: 100vw;
+    border: 5px solid black;
+    width: calc(100vw - 50px);
     height: 100vh;
-    filter: contrast(150%);
+    filter: drop-shadow(30px 30px 30px);
 }
 
 main .banner .rectangle {
+    margin-top: 22.5px;
     position: absolute;
     top: 120px;
     z-index: 2;
     width: 700px;
     height: 100vh;
-    background: black;
+    background: #222;
     opacity: 0.9;
 }
 
@@ -270,7 +273,7 @@ main .banner h1 {
     color: white;
     font-size: 90px;
     font-weight: 800;
-    font-family: serif;
+    font-family: '나눔스퀘어';
     text-align: center;
 }
 
@@ -280,8 +283,8 @@ main .banner p {
     padding: 100px;
     color: white;
     font-size: 25px;
-    font-weight: 400;
-    font-family: serif;
+    font-weight: 400;    
+    font-family: '나눔스퀘어';
     line-height: 1.5;
     text-align: center;
 }
@@ -508,7 +511,6 @@ footer .inner .lower address {
     }
     header .inner {
         width: 100%;
-        border: 5px solid #222;
     }
     header .inner h1 a {
         font-size: 25px;
