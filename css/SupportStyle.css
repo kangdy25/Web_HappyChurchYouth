@@ -237,6 +237,34 @@ header .inner .util li a {
 }
 
 /* visual */
+main {
+    /* border: 3px solid aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+main h3 {
+    font-size: 35px;
+    font-family: '나눔스퀘어';
+    font-weight: 800;
+    color: #444;
+    margin: 30px 0px;
+    border-bottom: 2px solid #222;
+    padding-bottom: 5px;
+
+}
+
+main .rectangle {
+    width: 70vw;
+    height: 70vh;
+    opacity: 0.8;
+    /* background-color: #333; */
+    border: 2px solid black;
+    
+}
+
 
 /* footer */
 footer {
@@ -347,7 +375,6 @@ footer .inner .lower address {
     }
     header .inner {
         width: 100%;
-        border: 5px solid #222;
     }
     header .inner h1 a {
         font-size: 25px;
