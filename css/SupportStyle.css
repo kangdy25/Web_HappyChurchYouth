@@ -239,32 +239,44 @@ header .inner .util li a {
 /* visual */
 main {
     /* border: 3px solid aqua; */
+    /* margin: 30px 0px; */
+    background-color: #333;
+    
+}
+
+main .content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px 0px;
+
 }
 
-main h3 {
-    font-size: 35px;
+main .content h3 {
+    font-size: 33px;
     font-family: '나눔스퀘어';
     font-weight: 800;
-    color: #444;
-    margin: 30px 0px;
-    border-bottom: 2px solid #222;
+    color: #ccc;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ccc;
     padding-bottom: 5px;
 
 }
 
-main .rectangle {
+main .content .rectangle {
     width: 70vw;
     height: 70vh;
     opacity: 0.8;
-    /* background-color: #333; */
-    border: 2px solid black;
-    
+    background-color: white;
+    margin-bottom: 70px;
+    border: 5px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
+main .content .form .Agree {
+    display: block;
+}
 
 /* footer */
 footer {

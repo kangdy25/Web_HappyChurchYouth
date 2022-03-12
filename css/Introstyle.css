@@ -251,6 +251,7 @@ main .introImg {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 50px;
+
 }
 
 main .introImg h1 {
@@ -720,15 +721,6 @@ footer .inner .lower address {
         font-family: '나눔스퀘어';
         font-size: 14px;
     }
-
-
-
-
-
-
-
-
-
 
     footer .inner {
         width: 270px;
