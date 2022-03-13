@@ -273,7 +273,6 @@ main .content .rectangle {
 }
 
 main .content .contact {
-    border: 3px solid aqua;
     width: calc(100% - 100px);
     position: relative;
     top: 60px;
@@ -513,10 +512,49 @@ footer .inner .lower address {
         font-size: 12px;
         padding: 15px 7px;   
     }
+
+    main .content h3 {
+        font-size: 30px;
+        font-weight: 800;
+    }
+    
+    main .content .rectangle {
+        width: 95%;
+        height: 75vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    main .content .contact {
+        width: calc(100% - 70px);  
+        left: 40px;
+    }
+    
+    main .content .contact h2 {
+        font-size: 27px;
+    }
+    
+    main .content .contact img {
+        width: 180px;
+    }
+    
+    main .content .form .Agree span .contentCheck {
+        width: 10pt;
+        height: 9pt;
+    }
+    
+    main .content .form .Agree .Agreelink1, .Agreelink2 {
+        cursor: pointer;
+        font-size: 15px;
+    }
+    
+    main .content .form .Agree span .ExplainAgree {
+        font-size: 15px;
+    }
     footer .inner {
         width: 550px;
     }
-    
+
     footer .inner .upper ul li a {
         font-size: 25px;
     }
@@ -543,10 +581,6 @@ footer .inner .lower address {
     header .inner .util {
         display: none; 
     }
-
-
-
-
     main {
         background-color: #333;
     }
