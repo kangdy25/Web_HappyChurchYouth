@@ -238,10 +238,7 @@ header .inner .util li a {
 
 /* visual */
 main {
-    /* border: 3px solid aqua; */
-    /* margin: 30px 0px; */
     background-color: #333;
-    
 }
 
 main .content {
@@ -265,17 +262,18 @@ main .content h3 {
 
 main .content .rectangle {
     width: 70%;
-    height: 70vh;
+    height: 75vh;
     opacity: 0.8;
     background-color: white;
     margin-bottom: 70px;
     border: 5px solid black;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
+    
 }
 
 main .content .contact {
+    border: 3px solid aqua;
     width: calc(100% - 100px);
     position: relative;
     top: 60px;
@@ -312,7 +310,7 @@ main .content .form {
 }
 
 main .content .form h2 {
-    width: 90%;
+    width: 95%;
     text-align: center;
     font-size: 20px;
     font-family: '나눔고딕';
@@ -332,7 +330,6 @@ main .content .form .inputclass input {
     margin-top: 20px;
 }
 
-
 main .content .form .inputclass input::placeholder {
     padding-left: 10px;
     font-family: Georgia;
@@ -349,7 +346,7 @@ main .content .form .Agree {
 }
 
 main .content .form .Agree span textarea {
-    width: 70%;
+    width: 90%;
     height: 80px;
     padding: 15px;
     margin-top: 10px;
@@ -358,8 +355,20 @@ main .content .form .Agree span textarea {
     font-family: '나눔고딕';
 }
 
+main .content .form .Agree span .contentCheck {
+    width: 10pt;
+    height: 9pt;
+}
+
 main .content .form .Agree .Agreelink1, .Agreelink2 {
     cursor: pointer;
+    font-size: 15px;
+    font-family: '나눔고딕';
+}
+
+main .content .form .Agree span .ExplainAgree {
+    font-size: 15px;
+    font-family: '나눔고딕';
 }
 
 main .content .form button {
@@ -380,7 +389,6 @@ main .content .form button:hover {
     transition: all 0.5s;
     
 }
-
 
 /* footer */
 footer {
@@ -447,6 +455,39 @@ footer .inner .lower address {
     header .inner .util li a {
         padding: 15px 10px;
     }
+
+    main .content .rectangle {
+        width: 80%;
+    }
+    
+    main .content .contact h2 {
+        font-size: 30px;
+    }
+    
+    main .content .contact img {
+        width: 200px;
+    }
+    
+    main .content .form h2 {
+        width: 90%;
+        line-height: 1.3;
+        font-size: 19px;
+        margin-right: 40px;
+    }   
+    
+    main .content .form .Agree span .contentCheck {
+        width: 10pt;
+        height: 8.5pt;
+    }
+    
+    main .content .form .Agree .Agreelink1, .Agreelink2 {
+        font-size: 13.5px;
+    }
+    
+    main .content .form .Agree span .ExplainAgree {
+        font-size: 13.5px;
+    }  
+
     footer .inner {
         width: 850px;
     }
@@ -502,14 +543,98 @@ footer .inner .lower address {
     header .inner .util {
         display: none; 
     }
+
+
+
+
+    main {
+        background-color: #333;
+    }
+
+    main .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    main .content h3 {
+        font-size: 33px;
+        font-family: '나눔스퀘어';
+        font-weight: 800;
+        color: #ccc;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 5px;
+        
+    }
+
+    main .content .rectangle {
+        width: 100%;
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .content .contact {
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .content .contact h2 {
+        border-bottom: 2px solid #333;
+        padding-bottom: 2px;
+        margin: 50px 0px;
+    }
+
+    main .content .form {
+        position: relative;
+        left: 10%;
+        width: 80%;
+    }
+
+    main .content .form .Agree {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .content .form h2 {
+        width: 100%;
+    }
+
+    main .content .form .inputclass input {
+        width: 100%;
+    }
+
+    main .content .form .inputclass input:nth-child(4) {
+        width: 100%;
+    }
+
+    main .content .form .Agree span .contentCheck {
+        width: 10pt;
+        height: 9pt;
+    }
+
+    main .content .form .Agree .Agreelink1, .Agreelink2 {
+        font-size: 15px;
+    }
+
+    main .content .form .Agree span .ExplainAgree {
+        font-size: 15px;
+    }
+
     footer .inner {
         width: 270px;
     }
-    
     footer .inner .upper ul li a {
         font-size: 20px;
     }
-
     footer .inner .lower address {
         margin-left: 10px;
         font: bold 11px/1.5 "arial";
