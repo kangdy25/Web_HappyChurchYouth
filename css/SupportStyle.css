@@ -663,6 +663,10 @@ footer .inner .lower address {
         font-size: 15px;
     }
 
+    main .content .form .Agree span textarea {
+        width: 100%;
+    }
+
     footer .inner {
         width: 270px;
     }
