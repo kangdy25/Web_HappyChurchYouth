@@ -55,15 +55,15 @@
                     </ul>
                     <img src="media/Support_Img/church.png">
                 </div>
-                <form class="gform" method="post"
-                action="https://script.google.com/macros/s/AKfycbzWUcU5yvNFifgs8COCFNRdcPxYo0-dYbLaIdNCeg/exec">
+                <form class="gform" method="post" data-email="canfrog@naver.com"
+                action="https://script.google.com/macros/s/AKfycby_uZisKjThj_TssZewofgFjkddnFMzUqbm3GHq/exec">
                     <div class="Agree">
                         <h2>이곳으로 문의주시면, 이메일로 답변드립니다.</h2>
                         <div class="inputclass">
-                                <input type="name" placeholder="*NAME">
-                                <input type="email" placeholder="*E-MAIL">
-                                <input type="subject" placeholder="*SUBJECT">
-                                <input type="message" placeholder="*MESSAGE">
+                                <input type="name" name="name" placeholder="*NAME">
+                                <input type="email" name="email" placeholder="*E-MAIL">
+                                <input type="text" name="subject" placeholder="*SUBJECT">
+                                <input type="text" name="message" placeholder="*MESSAGE">
                             </div>    
                             <span class="all">
                                 <input class="contentCheck" type="checkbox">
@@ -83,6 +83,11 @@
                             </span>
                         </div>
                         <button type="submit">보내기</button>
+                        <div style="display:none" class="thankyou_message">
+                            <!-- You can customize the thankyou message by editing the code below -->
+                            <h2><strong>감사합니다!!</strong> 빠른 시일 내로 답변 드리겠습니다.
+                            </h2>
+                        </div>
                 </form>
             </div>
         </div>
@@ -114,5 +119,7 @@
             </div>
         </div>
     </footer>
+    <script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 </body>
 </html>
