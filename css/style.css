@@ -34,7 +34,8 @@ header .inner h1 {
 }
 
 header .inner h1 a {
-    font: bold 25px/1 "arial";
+    font-family: "Berkshire Swash", sans-serif;
+    font-weight: 500;
     color: #444;
     transition: all 0.5s;
 }
@@ -399,6 +400,7 @@ footer .inner .lower address {
         width: 850px;
     }
     header .inner h1 a {
+        font-size: 25px;
         padding-left: 50px;
     }
     header .inner #gnb li a {
@@ -467,8 +469,8 @@ footer .inner .lower address {
         width: 550px;
     }
     header .inner h1 a {
-        padding-left: 25px;
-        font-size: 22px;
+        padding-left: 0px;
+        font-size: 20px;
     }
     header .inner #gnb li a {
         font-size: 13px;
@@ -544,7 +546,7 @@ footer .inner .lower address {
         /* border: 5px solid #222; */
     }
     header .inner h1 a {
-        font-size: 25px;
+        font-size: 20px;
         padding-left: 40px;
     }
     header .inner #gnb  {
