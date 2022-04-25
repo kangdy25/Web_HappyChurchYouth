@@ -389,6 +389,10 @@ main .content .gform button:hover {
     
 }
 
+.hide {
+    display: none;
+}
+
 /* footer */
 footer {
     width: 100%;

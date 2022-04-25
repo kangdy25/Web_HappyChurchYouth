@@ -1,15 +1,12 @@
 const Hide = document.querySelector("#Hide");
-const Agreelink1 = document.querySelector(".Agreelink1");
-const Agreelink2 = document.querySelector(".Agreelink2");
+const Agreelink = document.querySelector(".Agreelink");
 
-function ShowList() {
-    Hide.style.display = "inline-block";
-}
+Agreelink.addEventListener("click", () => {
+    if (Agreelink.innerHTML == " [약관 보기] ") {
+        Agreelink.innerHTML = " [약관 닫기] ";
+    } else {
+        Agreelink.innerHTML = " [약관 보기] ";
+    }
 
-function HideList() {
-    Hide.style.display = "none";
-}
-
-Agreelink1.addEventListener("click", ShowList);
-Agreelink2.addEventListener("click", HideList);
-
+    Hide.classList.toggle("hide");
+});
