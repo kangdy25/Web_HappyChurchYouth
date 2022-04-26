@@ -34,7 +34,8 @@ header .inner h1 {
 }
 
 header .inner h1 a {
-    font: bold 25px/1 "arial";
+    font-family: "Berkshire Swash", sans-serif;
+    font-weight: 500;
     color: #444;
     transition: all 0.5s;
 }
@@ -255,8 +256,8 @@ main .introImg {
 }
 
 main .introImg h1 {
+    font-family: "Noto Sans KR", sans-serif;
     font-size: 25px;
-    font-family: '나눔고딕';
     font-weight: 600;
     color: rgb(66, 94, 250);
     margin-top: 20px;
@@ -284,7 +285,6 @@ main .rectangle {
     padding: 10px;
 }
 main .rectangle h3  {
-    /* border: 3px solid aqua; */
     grid-column: 1 / span 2;
     justify-self: center;
     margin: 30px 0px;
@@ -321,8 +321,8 @@ main .title {
 
 main .title h3 {
     font-size: 22px;
-    font-family: '나눔고딕';
-    font-weight: 500;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
     color: rgb(66, 94, 250);
 }
 
@@ -338,13 +338,13 @@ main .intro {
 
 main .intro p {
     font-size: 17px;
-    font-family: '나눔고딕';
+    font-family: "Nanum Gothic";
     margin-bottom: 15px;
 }
 
 main .intro h1 {
     font-size: 25px;
-    font-family: '나눔고딕';
+    font-family: "Noto Sans KR", sans-serif;
     font-weight: 600;
     color: rgb(66, 94, 250);
     margin-bottom: 30px;
@@ -365,27 +365,26 @@ main .line .divide {
 }
 
 main .line .divide h3 {
-    /* border: 3px solid aqua; */
     padding-left: 20px;
     padding-right: 100px;
     display: flex;
     align-items: center;
     text-align: center;
     font-weight: 600;
-    font-family: '나눔고딕';
+    font-family: "Noto Sans KR", sans-serif;
     color: #555;
 }
 
 main .line .divide .explain p{
     margin-bottom: 5px;
-    font-family: '나눔스퀘어';
+    font-family: 'Nanum Gothic';
     font-size: 17px;
 }
 
 main .line .divide .explain:nth-child(2) p{
     margin-bottom: 20px;
     line-height: 1.5;
-    font-family: '나눔스퀘어';
+    /* font-weight: bold; */
     font-size: 17px;
 }
 
@@ -449,6 +448,7 @@ footer .inner .lower address {
         width: 850px;
     }
     header .inner h1 a {
+        font-size: 25px;
         padding-left: 50px;
     }
     header .inner #gnb li a {
@@ -510,8 +510,8 @@ footer .inner .lower address {
         width: 550px;
     }
     header .inner h1 a {
-        padding-left: 25px;
-        font-size: 22px;
+        padding-left: 0px;
+        font-size: 20px;
     }
     header .inner #gnb li a {
         font-size: 13px;
@@ -531,7 +531,7 @@ footer .inner .lower address {
     }
     
     main .introImg h1 {
-        font-size: 20px;
+        font-size: 22px;
     }
     
     main .introImg img {
@@ -609,7 +609,7 @@ footer .inner .lower address {
         width: 100%;
     }
     header .inner h1 a {
-        font-size: 25px;
+        font-size: 20px;
         padding-left: 40px;
     }
     header .inner #gnb  {
@@ -717,17 +717,21 @@ footer .inner .lower address {
         padding-right: 15px;
         font-size: 14px;
     }
+
+    main .line .divide .explain {
+        margin-left: 10px;
+    }
     
     main .line .divide .explain p{
         margin: 15px 0px;
-        font-family: '나눔스퀘어';
+        font-family: 'Nanum Gothic';
         font-size: 14px;
     }
     
     main .line .divide .explain:nth-child(2) p{
         margin-bottom: 15px;
         line-height: 1.5;
-        font-family: '나눔스퀘어';
+        font-family: 'Nanum Gothic';
         font-size: 14px;
     }
 
