@@ -34,7 +34,8 @@ header .inner h1 {
 }
 
 header .inner h1 a {
-    font: bold 25px/1 "arial";
+    font-family: "Berkshire Swash", sans-serif;
+    font-weight: 500;
     color: #444;
     transition: all 0.5s;
 }
@@ -263,13 +264,15 @@ figure .inner {
 }
 
 figure .inner h1 {
-    font: bold 70px/1.3 "KoPubWorld돋움체_Pro Bold";
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 60px;
     color: #ddd;
     margin-bottom: 20px;
 }
 
 figure .inner p {
-    font: bold 15px/1.3 "나눔스퀘어 Bold";
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
     color: #888;
     margin-bottom: 60px;
 }
@@ -288,7 +291,8 @@ section .inner {
 }
 
 section .inner h1 {
-    font: bold 30px/1 "나눔스퀘어 Bold";
+    font-family: "Noto Sans KR", sans-serif;
+    letter-spacing: 1px;
     text-align: center;
     color: #555;
     margin-bottom: 45px;
@@ -314,7 +318,8 @@ section .inner .wrap article h2 {
 }
 
 section .inner .wrap article h2 a {
-    font: bold 20px/1 "나눔스퀘어 Bold" ;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 500;    
     color: #555;
 }
 
@@ -395,6 +400,7 @@ footer .inner .lower address {
         width: 850px;
     }
     header .inner h1 a {
+        font-size: 25px;
         padding-left: 50px;
     }
     header .inner #gnb li a {
@@ -415,11 +421,11 @@ footer .inner .lower address {
         width: 850px;
     }
     figure .inner h1 {
-        font-size: 35px;
+        font-size: 45px;
         margin-left: 60px;
     }
     figure .inner p {
-        font-size: 13px;
+        font-size: 15px;
         margin-bottom: 60px;
         margin-left: 60px;
     }
@@ -463,8 +469,8 @@ footer .inner .lower address {
         width: 550px;
     }
     header .inner h1 a {
-        padding-left: 25px;
-        font-size: 22px;
+        padding-left: 0px;
+        font-size: 20px;
     }
     header .inner #gnb li a {
         font-size: 13px;
@@ -487,11 +493,11 @@ footer .inner .lower address {
         width: 500px;
     }
     figure .inner h1 {
-        font-size: 27px;
+        font-size: 35px;
         margin-left: 20px;
     }
     figure .inner p {
-        font-size: 11px;
+        font-size: 14px;
         margin-left: 30px;
     }
     section .inner {
@@ -540,7 +546,7 @@ footer .inner .lower address {
         /* border: 5px solid #222; */
     }
     header .inner h1 a {
-        font-size: 25px;
+        font-size: 20px;
         padding-left: 40px;
     }
     header .inner #gnb  {
@@ -567,11 +573,11 @@ footer .inner .lower address {
     }
 
     figure .inner h1 {
-        font-size: 23px;
+        font-size: 27px;
         margin-left: 0px;
     }
     figure .inner p {
-        font-size: 10px;
+        font-size: 11px;
         margin-left: 0px;
     }
     
@@ -588,7 +594,7 @@ footer .inner .lower address {
     }
 
     section .inner h1 {
-        font: bold 20px/1 "나눔스퀘어 Bold";
+        font-family: "Noto Sans KR", sans-serif;
         text-align: center;
         padding-bottom: 0px;
     }
