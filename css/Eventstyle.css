@@ -285,6 +285,7 @@ main .contents .contents_detail h4 {
     padding: 3px;
     color: #444;
     border-bottom: 1px solid #222;
+    font-family: "Noto Sans KR", sans-serif;
 }
 
 /* footer */

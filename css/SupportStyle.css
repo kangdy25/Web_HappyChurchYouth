@@ -250,7 +250,7 @@ main .content {
 
 main .content h3 {
     font-size: 33px;
-    font-family: "Nanum Gothic";
+    font-family: "Noto Sans KR", sans-serif;
     font-weight: 800;
     color: #ccc;
     margin-top: 50px;
@@ -281,8 +281,8 @@ main .content .contact {
 
 main .content .contact h2 {
     text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
     font-size: 35px;
-    font-family: 'Nanum Gothic';
     font-weight: 800;
     color: #333;
     margin-bottom: 50px;
@@ -312,9 +312,8 @@ main .content .gform h2 {
     width: 95%;
     text-align: center;
     font-size: 20px;
-    font-family: 'Nanum Gothic';
+    font-family: "Noto Sans KR", sans-serif;
     color: #333;
-    font-weight: 600;
     margin-top: 60px;
     margin-bottom: 30px;
 }
