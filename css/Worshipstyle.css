@@ -34,7 +34,8 @@ header .inner h1 {
 }
 
 header .inner h1 a {
-    font: bold 25px/1 "arial";
+    font-family: "Berkshire Swash", sans-serif;
+    font-weight: 500;
     color: #444;
     transition: all 0.5s;
 }
@@ -249,10 +250,10 @@ main .banner {
 }
 
 main .banner img {
-    border: 5px solid black;
+    border: 3px solid #555;
     width: calc(100vw - 50px);
     height: 100vh;
-    filter: drop-shadow(30px 30px 30px);
+    filter: drop-shadow(10px 10px 5px);
 }
 
 main .banner .rectangle {
@@ -262,7 +263,7 @@ main .banner .rectangle {
     z-index: 2;
     width: 700px;
     height: 100vh;
-    background: #222;
+    background: #333;
     opacity: 0.9;
 }
 
@@ -272,8 +273,8 @@ main .banner h1 {
     top: 200px;
     color: white;
     font-size: 90px;
-    font-weight: 800;
-    font-family: '나눔스퀘어';
+    font-family: 'Nanum Gothic';
+    font-weight: 600;
     text-align: center;
 }
 
@@ -283,18 +284,22 @@ main .banner p {
     padding: 100px;
     color: white;
     font-size: 25px;
+    font-family: 'Nanum Gothic';
     font-weight: 400;    
-    font-family: '나눔스퀘어';
     line-height: 1.5;
     text-align: center;
 }
 
 main h3 {
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 600;
     text-align: center;
     margin-bottom: 100px;
-    font-family: '나눔고딕';
+    border-bottom: 1px solid #666;
+    padding-bottom: 10px;
+    color: #444;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
 }
 
 main .content {
@@ -328,16 +333,18 @@ main .content .sermon .img img{
 }
 
 main .content .sermon .img img:hover{
-    transform: scale(1.4);
+    transform: scale(1.3);
     transition: 0.7s;
 }
 
 main .content .sermon h4{
     font-size: 20px;
-    font-weight: 600;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 500;
     padding-bottom: 3px;
+    color: #555;
     border-bottom: 1px solid #000;
-    font-family: '나눔스퀘어';
+
 }
 /* footer */
 footer {
@@ -395,6 +402,7 @@ footer .inner .lower address {
         width: 850px;
     }
     header .inner h1 a {
+        font-size: 25px;
         padding-left: 50px;
     }
     header .inner #gnb li a {
@@ -402,6 +410,9 @@ footer .inner .lower address {
     }
     header .inner .util li a {
         padding: 15px 10px;
+    }
+    main h3 {
+        font-size: 40px;
     }
     main .banner .rectangle {
         width: 500px;
@@ -425,7 +436,7 @@ footer .inner .lower address {
         transform: scale(1.5);
     }
     main .content .sermon h4{
-        font-size: 14px;
+        font-size: 16px;
     }
     footer .inner {
         width: 850px;
@@ -437,8 +448,8 @@ footer .inner .lower address {
         width: 550px;
     }
     header .inner h1 a {
-        padding-left: 25px;
-        font-size: 22px;
+        padding-left: 0px;
+        font-size: 20px;
     }
     header .inner #gnb li a {
         font-size: 13px;
@@ -451,6 +462,7 @@ footer .inner .lower address {
         font-size: 12px;
         padding: 15px 7px;   
     }
+    
     main .banner {
         margin-bottom: 80px;
     }
@@ -468,7 +480,7 @@ footer .inner .lower address {
         margin-top: 200px;
         padding: 70px;
         font-size: 20px;
-        font-weight: 700;
+        font-weight: 600;
     }
     main h3 {
         font-size: 35px;
@@ -486,10 +498,10 @@ footer .inner .lower address {
         margin-bottom: 15px;
     }
     main .content .sermon .img img:hover{
-        transform: scale(1.3);
+        transform: scale(1.1);
     }
     main .content .sermon h4{
-        font-size: 17px;
+        font-size: 20px;
     }
     footer .inner {
         width: 550px;
@@ -513,7 +525,7 @@ footer .inner .lower address {
         width: 100%;
     }
     header .inner h1 a {
-        font-size: 25px;
+        font-size: 20px;
         padding-left: 40px;
     }
     header .inner #gnb  {
@@ -526,7 +538,7 @@ footer .inner .lower address {
         margin-bottom: 70px;
     }
     main .banner .rectangle {
-        width: 300px;
+        width: 275px;
     }
     main .banner h1 {
         font-size: 55px;
@@ -548,10 +560,10 @@ footer .inner .lower address {
         margin-bottom: 20px;
     }
     main .content .sermon .img img:hover{
-        transform: scale(1.2);
+        transform: scale(1.0);
     }
     main .content .sermon h4{
-        font-size: 16px;
+        font-size: 17px;
     }
     footer .inner {
         width: 270px;
