@@ -411,7 +411,7 @@ footer .inner .lower address {
     }
     figure {
         width: 100vw;
-        height: calc(100vh - 300px);
+        height: calc(100vh - 270px);
         padding-top: 200px;
     }
     figure video {
@@ -486,7 +486,7 @@ footer .inner .lower address {
     
     figure {
         width: 100vw;
-        height: calc(100vh - 480px);
+        height: calc(100vh - 380px);
         padding-top: 150px;
     }
     figure .inner {
