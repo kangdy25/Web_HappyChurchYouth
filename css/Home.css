@@ -240,7 +240,7 @@ header .inner .util li a {
 /* visual */
 figure {
     width: 100%;
-    height: calc(100vh - 120px);
+    height: calc(100% - 120px);
     background: #000;
     position: relative;
     overflow: hidden;
