@@ -249,6 +249,7 @@ figure {
     position: relative;
     overflow: hidden;
     padding-top: 250px; 
+    min-height: 400px;
 }
 
 figure video {

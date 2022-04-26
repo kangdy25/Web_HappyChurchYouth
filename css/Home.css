@@ -245,6 +245,7 @@ figure {
     position: relative;
     overflow: hidden;
     padding-top: 250px; 
+    min-height: 400px;
 }
 
 figure video {
@@ -558,7 +559,7 @@ footer .inner .lower address {
     
     figure {
         width: 100vw;
-        height: calc(100vh - 550px);
+        height: calc(100vh - 470px);
         padding-top: 120px;
         padding-bottom: 200px;
     }
