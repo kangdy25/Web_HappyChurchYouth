@@ -33,6 +33,10 @@ header .inner {
 
 header .inner h1 {
     position: relative;
+    /* background: -webkit-linear-gradient(rgb(255, 71, 71), rgb(39, 62, 192));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
     left: 0px;
     top: 45px;
 }
