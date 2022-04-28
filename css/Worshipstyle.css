@@ -540,6 +540,9 @@ footer .inner .lower address {
     main .banner .rectangle {
         width: 275px;
     }
+    main .banner .rectangle p {
+        font-size: 17px;
+    }
     main .banner h1 {
         font-size: 55px;
     }
