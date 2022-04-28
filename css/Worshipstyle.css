@@ -254,6 +254,7 @@ main .banner img {
     width: calc(100vw - 50px);
     height: 100vh;
     filter: drop-shadow(10px 10px 5px);
+    min-height: 1000px;
 }
 
 main .banner .rectangle {
@@ -265,6 +266,8 @@ main .banner .rectangle {
     height: 100vh;
     background: #333;
     opacity: 0.9;
+    min-height: 1000px;
+
 }
 
 main .banner h1 {
