@@ -266,15 +266,15 @@ figure .inner {
 
 figure .inner h1 {
     font-family: "Noto Sans KR", sans-serif;
-    font-size: 60px;
+    font-size: 65px;
     color: #ddd;
     margin-bottom: 20px;
 }
 
 figure .inner p {
     font-family: "Noto Sans KR", sans-serif;
-    font-size: 20px;
-    color: #888;
+    font-size: 25px;
+    color: #aaa;
     margin-bottom: 60px;
 }
 
@@ -422,11 +422,11 @@ footer .inner .lower address {
         width: 850px;
     }
     figure .inner h1 {
-        font-size: 45px;
+        font-size: 50px;
         margin-left: 60px;
     }
     figure .inner p {
-        font-size: 15px;
+        font-size: 20px;
         margin-bottom: 60px;
         margin-left: 60px;
     }
@@ -498,7 +498,7 @@ footer .inner .lower address {
         margin-left: 20px;
     }
     figure .inner p {
-        font-size: 14px;
+        font-size: 17px;
         margin-left: 30px;
     }
     section .inner {
@@ -574,11 +574,11 @@ footer .inner .lower address {
     }
 
     figure .inner h1 {
-        font-size: 27px;
+        font-size: 30px;
         margin-left: 0px;
     }
     figure .inner p {
-        font-size: 11px;
+        font-size: 15px;
         margin-left: 0px;
     }
     
@@ -634,7 +634,7 @@ footer .inner .lower address {
         margin-bottom: 10px;
     }
     footer .inner {
-        width: 270px;
+        width: 380px;
     }
     
     footer .inner .upper ul li a {

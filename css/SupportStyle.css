@@ -326,6 +326,15 @@ main .content .gform .inputclass input {
     width: 90%;
     height: 30px;
     margin-top: 20px;
+    font-family: Georgia;
+
+}
+
+main .content .gform .inputclass #message {
+    width: 90%;
+    margin: 20px 0px;
+    padding: 5px;
+    font-family: Georgia;
 }
 
 main .content .gform .inputclass input::placeholder {
@@ -333,11 +342,12 @@ main .content .gform .inputclass input::placeholder {
     font-family: Georgia;
 }
 
-main .content .gform .inputclass input:nth-child(4) {
-    width: 90%;
-    height: 150px;
-    margin: 20px 0px;
+main .content .gform .inputclass #message::placeholder {
+    padding: 5px;
+    font-family: Georgia;
+    font-size: 17px;
 }
+
 
 main .content .gform .Agree {
     display: block;
@@ -650,7 +660,7 @@ footer .inner .lower address {
         width: 100%;
     }
 
-    main .content .gform .inputclass input:nth-child(4) {
+    main .content .gform .inputclass #message {
         width: 100%;
     }
 
@@ -675,7 +685,7 @@ footer .inner .lower address {
     }
 
     footer .inner {
-        width: 270px;
+        width: 380px;
     }
     footer .inner .upper ul li a {
         font-size: 20px;
