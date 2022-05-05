@@ -411,7 +411,7 @@ footer .inner .lower address {
         padding: 15px 10px;
     }
     figure {
-        width: 100vw;
+        width: 100%;
         height: calc(100vh - 270px);
         padding-top: 200px;
     }
@@ -486,7 +486,7 @@ footer .inner .lower address {
     }
     
     figure {
-        width: 100vw;
+        width: 100%;
         height: calc(100vh - 380px);
         padding-top: 150px;
     }
@@ -634,7 +634,7 @@ footer .inner .lower address {
         margin-bottom: 10px;
     }
     footer .inner {
-        width: 380px;
+        width: 300px;
     }
     
     footer .inner .upper ul li a {
